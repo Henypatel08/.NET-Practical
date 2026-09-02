@@ -1,0 +1,5 @@
+﻿Build started at 22:51...
+1>------ Build started: Project: Practical 5, Configuration: Debug Any CPU ------
+1>  Practical 5 -> C:\Users\henup\source\repos\Practical 5\bin\Practical 5.dll
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+========== Build completed at 22:51 and took 00.968 seconds ==========
