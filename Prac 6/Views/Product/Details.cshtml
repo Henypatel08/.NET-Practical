@@ -1,0 +1,13 @@
+@model Practical6.Product
+
+<h2>Product Details</h2>
+
+<p><b>Product ID:</b> @Model.ProductId</p>
+<p><b>Product Name:</b> @Model.ProductName</p>
+<p><b>Description:</b> @Model.Description</p>
+<p><b>Price:</b> @Model.Price</p>
+<p><b>Category:</b> @Model.Category</p>
+
+<br />
+
+@Html.ActionLink("Back to Product Catalog", "Index")

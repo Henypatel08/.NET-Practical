@@ -1,0 +1,1 @@
+﻿<%@ Application Language="C#" Inherits="Practical6.MvcApplication" %>
