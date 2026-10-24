@@ -1,0 +1,43 @@
+﻿@model Practical_7.Model.Feedback
+
+@{
+    ViewBag.Title = "Feedback Details";
+    Layout = "~/View/Shared/_Layout.cshtml";
+}
+
+<h2>Feedback Details</h2>
+
+<table>
+    <tr>
+        <td><strong>Student Name:</strong></td>
+        <td>@Html.DisplayFor(m => m.StudentName)</td>
+    </tr>
+
+    <tr>
+        <td><strong>Faculty Name:</strong></td>
+        <td>@Html.DisplayFor(m => m.FacultyName)</td>
+    </tr>
+
+    <tr>
+        <td><strong>Course Name:</strong></td>
+        <td>@Html.DisplayFor(m => m.CourseName)</td>
+    </tr>
+
+    <tr>
+        <td><strong>Rating:</strong></td>
+        <td>@Html.DisplayFor(m => m.Rating) / 5</td>
+    </tr>
+
+    <tr>
+        <td><strong>Comments:</strong></td>
+        <td>@Html.DisplayFor(m => m.Comments)</td>
+    </tr>
+</table>
+
+<br />
+
+@Html.ActionLink(
+    "Back to Feedback List",
+    "Index",
+    "Feedback"
+)

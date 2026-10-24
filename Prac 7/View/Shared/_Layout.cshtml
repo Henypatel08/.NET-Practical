@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <title>
+        @ViewBag.Title - Feedback Management
+    </title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+        }
+
+        nav a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+        }
+
+        input, textarea, select {
+            padding: 8px;
+            margin: 5px 0;
+            width: 300px;
+        }
+
+        .btn {
+            background-color: #222;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .feedback-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Feedback Management System</h1>
+
+        <nav>
+            @Html.ActionLink(
+                "Feedback List",
+                "Index",
+                "Feedback"
+            )
+
+            |
+
+            @Html.ActionLink(
+                "Give Feedback",
+                "Create",
+                "Feedback"
+            )
+
+            |
+
+            <a href="@Url.Content("~/View/Home/About.cshtml")">
+                About
+            </a>
+        </nav>
+    </header>
+
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    <footer>
+        <p>© 2026 Feedback Management System</p>
+    </footer>
+
+</body>
+</html>

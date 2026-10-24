@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Practical_7.Model.Feedback>
+
+    @{
+        ViewBag.Title = "Feedback List";
+        Layout = "~/View/Shared/_Layout.cshtml";
+    }
+
+    <h2>Feedback List</h2>
+
+    <p>
+        @Html.ActionLink(
+            "Give New Feedback",
+            "Create",
+            "Feedback"
+        )
+    </p>
+
+    @foreach (var item in Model)
+    {
+        @Html.Partial(
+            "_FeedbackSummary",
+            item
+        )
+    }

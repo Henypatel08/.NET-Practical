@@ -1,0 +1,39 @@
+﻿@model Practical_7.Model.Feedback
+
+<div class="feedback-card">
+
+    <h3>
+        @Html.DisplayFor(model => model.StudentName)
+    </h3>
+
+    <p>
+        <strong>Faculty:</strong>
+        @Html.DisplayFor(model => model.FacultyName)
+    </p>
+
+    <p>
+        <strong>Course:</strong>
+        @Html.DisplayFor(model => model.CourseName)
+    </p>
+
+    <p>
+        <strong>Rating:</strong>
+        @Html.DisplayFor(model => model.Rating) / 5
+    </p>
+
+    <p>
+        <strong>Comments:</strong>
+        @Html.DisplayFor(model => model.Comments)
+    </p>
+
+    <p>
+        @Html.ActionLink(
+            "View Details",
+            "Details",
+            "Feedback",
+            new { id = Model.FeedbackId },
+            null
+        )
+    </p>
+
+</div>
